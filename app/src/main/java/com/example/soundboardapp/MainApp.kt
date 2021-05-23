@@ -1,4 +1,4 @@
-package com.example
+package com.example.soundboardapp
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
