@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">SoundBoardApp</string>
+
+    <string name="content_zdravko_mamic">Image of Zdravko Mamic</string>
+    <string name="content_elon_musk">Image of Elon Musk</string>
+    <string name="content_denzel_washington">Image of Denzel Washington</string>
+</resources>

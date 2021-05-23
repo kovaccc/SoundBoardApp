@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.soundboardapp.viewmodels.MainViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.MainActivity">
+
+        <ImageButton
+            android:id="@+id/ibZdravkoMamic"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/imagesize_large"
+            android:layout_margin="@dimen/margin_large"
+            android:contentDescription="@string/content_zdravko_mamic"
+            android:onClick="@{(v) -> viewModel.playPersonSound(v)}"
+            android:scaleType="fitCenter"
+            android:src="@drawable/zdravko_mamic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/ibElonMusk"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/imagesize_large"
+            android:layout_margin="@dimen/margin_large"
+            android:contentDescription="@string/content_elon_musk"
+            android:onClick="@{(v) -> viewModel.playPersonSound(v)}"
+            android:scaleType="fitCenter"
+            android:src="@drawable/elon_musk"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ibZdravkoMamic" />
+
+        <ImageButton
+            android:id="@+id/ibDenzelWashington"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/imagesize_large"
+            android:layout_margin="@dimen/margin_large"
+            android:contentDescription="@string/content_denzel_washington"
+            android:onClick="@{(v) -> viewModel.playPersonSound(v)}"
+            android:scaleType="fitCenter"
+            android:src="@drawable/denzel_washington"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ibElonMusk" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
