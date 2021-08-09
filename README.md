@@ -2,7 +2,7 @@
 An application that allows you to broadcast the sounds of different people
 
 ## About
-Android project is SoundPool class that manages and plays audio resources for applications.
+Android project is using SoundPool class that manages and plays audio resources for applications.
 
 ## Features
 The android app lets you:
